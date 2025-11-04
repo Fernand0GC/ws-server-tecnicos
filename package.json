@@ -1,0 +1,14 @@
+{
+  "name": "ws-server-tecnicos",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ws": "^8.16.0",
+    "jsonwebtoken": "^9.0.0",
+    "@neondatabase/serverless": "^0.8.0"
+  }
+}
