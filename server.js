@@ -19,7 +19,7 @@ wss.on("connection", (ws, req) => {
   const token = new URL(req.url, `http://${req.headers.host}`).searchParams.get("token");
   try {
     const data = jwt.verify(token, process.env.JWT_SECRET);
-    const tecnicoId = data.employee.id;
+    const tecnicoId = data.empleado_id; // ← CAMBIO AQUÍ
     conexiones.set(tecnicoId, ws);
     console.log(`🟢 Técnico conectado: ${tecnicoId}`);
 
